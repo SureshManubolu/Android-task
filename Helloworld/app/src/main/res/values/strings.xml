@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Myapp</string>
+    <string name="hello">Hello!</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="sample_image">Sample image</string>
+    <string name="subscribe_to_newsletter">Subscribe to newsletter</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="volume_50">Volume: 50</string>
+    <string name="summary_will_appear_here">Summary will appear here</string>
+    <string name="submit">Submit</string>
+</resources>

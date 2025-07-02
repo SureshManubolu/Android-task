@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- EditText for user name -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            android:autofillHints="name" />
+
+
+
+
+        <!-- TextView for greeting -->
+        <TextView
+            android:id="@+id/textViewGreeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <!-- ImageView to show image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/your_image"
+            android:background="@color/white"  <!-- Light background behind a dark image -->
+        android:tint="@color/black" />      <!-- Tint the image to increase contrast -->
+
+
+        <!-- CheckBox for subscription -->
+        <CheckBox
+            android:id="@+id/checkboxSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribe_to_newsletter" />
+
+        <!-- RadioGroup for favorite color -->
+        <RadioGroup
+            android:id="@+id/radioGroupColors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red" />
+
+            <RadioButton
+                android:id="@+id/radioBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue" />
+
+            <RadioButton
+                android:id="@+id/radioGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green" />
+        </RadioGroup>
+
+        <!-- Switch for notifications -->
+        <Switch
+            android:id="@+id/switchNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_notifications"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <!-- SeekBar for volume -->
+        <SeekBar
+            android:id="@+id/seekBarVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <!-- TextView to show volume -->
+        <TextView
+            android:id="@+id/textViewVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volume_50" />
+
+        <!-- Spinner for country selection -->
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ProgressBar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:max="100"
+            android:layout_marginTop="8dp" />
+
+        <!-- Button to show greeting and summary -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+
+        <!-- Summary TextView -->
+        <TextView
+            android:id="@+id/textViewSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="@string/summary_will_appear_here"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
